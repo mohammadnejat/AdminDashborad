@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------------  Matrial CDN  ------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!----------------  Stylesheet  --------------------->
+    <link rel="stylesheet" href="./index.css">
+    <!--------------Font------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!------------------------------------  ASIDE ----------------------------------------->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                    <h3>2Fast<span class="warning">4U</span></h3>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp close">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <p>منوی اصلی</p>
+                </a>
+
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">person</span>
+                    <p>کاربران</p>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">shopping_basket</span>
+                    <p>سفارشات</p>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <p>تحلیل فروش</p>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">mail</span>
+                    <p>پیام ها</p>
+                    <span class="unread-message warning">26</span>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">local_mall</span>
+                    <p>محصولات</p>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <p>گزارش</p>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <p>تنظیمات</p>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <p>اضافه کردن محصول</p>
+                </a>
+
+                <a href="#" class="logout">
+                    <span class="material-icons-sharp">logout</span>
+                    <p>خروج</p>
+                </a>
+            </div>
+        </aside>
+        <!------------------------------------  TOTAL SALES  ----------------------------------------->
+        <main id="mainn">
+            <h2>منوی اصلی</h2>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insight">
+                <div class="sale">
+                    <span class="material-icons-sharp sale-icon">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h2>محصولات فروخته شده</h2>
+                            <span>260.200.000ریال</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle class="sale-circle" cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>88%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted">24ساعت گذشته</small>
+                </div>
+                <!------------------------------------  TOTAL expenses  ----------------------------------------->
+                <div class="sale">
+                    <span class="material-icons-sharp expenses-icon">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h2>هزینه ها</h2>
+                            <span>53.000.000ریال</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle class="expenses-circle" cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>22%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted">24ساعت گذشته</small>
+                </div>
+                <!------------------------------------  TOTAL income  ----------------------------------------->
+                <div class="sale">
+                    <span class="material-icons-sharp income-icon">show_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h2>درآمد</h2>
+                            <span>207.200.000ریال</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle class="income-circle" cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="muted">24ساعت گذشته</small>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2>آخرین سفارش ها</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>اسم محصول</th>
+                            <th>شماره محصول</th>
+                            <th>پرداختی ها</th>
+                            <th>وضعیت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>موبایل</td>
+                            <td>1982</td>
+                            <td>پرداخت شد</td>
+                            <td class="success">انجام شد</td>
+                            <td class="td-details">جزئیات بیشتر...</td>
+                        </tr>
+                        <tr>
+                            <td>شارژر</td>
+                            <td>3251</td>
+                            <td>در انتظار پرداخت</td>
+                            <td class="warning">درحال انجام</td>
+                            <td class="td-details">جزئیات بیشتر...</td>
+                        </tr>
+                        <tr>
+                            <td>لپتاپ</td>
+                            <td>1032</td>
+                            <td>پرداخت شد</td>
+                            <td class="success">انجام شد</td>
+                            <td class="td-details">جزئیات بیشتر...</td>
+                        </tr>
+                        <tr>
+                            <td>هدفون</td>
+                            <td>2547</td>
+                            <td>در انتظار پرداخت</td>
+                            <td class="warning">درحال انجام</td>
+                            <td class="td-details">جزئیات بیشتر...</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a>مشاهده همه</a>
+            </div>
+        </main>
+        <!------------------------------------  Right Top Side  ----------------------------------------->
+        <div class="right">
+            <div class="right-top">
+                <span class="material-icons-sharp menu" id="menu-btn">menu</span>
+                <div class="light-dark" id="light-dark">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp" id="dark-menu-icon">dark_mode</span>
+                </div>
+                <p>سلام. <b>امیر</b>
+                <p class="success">ادمین</p>
+                </p>
+                <img src="./images/admin.webp" alt="">
+            </div>
+
+            <h2>محصولات جدید</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            موبایل S10
+                        </th>
+                        <th>
+                            3عدد
+                        </th>
+                        <th class="success">
+                            رسیده
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            تبلت
+                        </th>
+                        <th>
+                            5عدد
+                        </th>
+                        <th class="warning">
+                            درحال انتظار
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            گارد گوشی
+                        </th>
+                        <th>
+                            8عدد
+                        </th>
+                        <th class="success">
+                            رسیده
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            کیبورد
+                        </th>
+                        <th>
+                            عدد10
+                        </th>
+                        <th class="success">
+                            رسیده
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="h2-info">تحلیل فروش</h2>
+
+            <div class="sale-info">
+                <span class="material-icons-sharp">shopping_cart</span>
+                <div class="order-info">
+                    <span>درحال انجام</span>
+                </div>
+                <p>15%</p>
+                <p>130</p>
+            </div>
+
+            <div class="sale-info">
+                <span class="material-icons-sharp">assignment_return</span>
+                <div class="order-info">
+                    <span>بازگشت خورده</span>
+                </div>
+                <p>11%</p>
+                <p>32</p>
+            </div>
+
+            <div class="sale-info">
+                <span class="material-icons-sharp">checklist</span>
+                <div class="order-info">
+                    <span>رسیده</span>
+                </div>
+                <p>89%</p>
+                <p>200</p>
+            </div>
+
+            <div class="sale-info-more">
+                <span class="material-icons-sharp">add</span>
+                <div class="order-info">
+                    <span>اضافه کردن</span>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./JavaScript.js"></script>
+</body>
+
+</html>
